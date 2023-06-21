@@ -18,7 +18,7 @@ a:link {
 }
 
 a:visited {
-  text: italic;
+  font-style: italic;
 }
 
 a:hover {
@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:active {
-  color: var(--color-light-grey)
+  background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
