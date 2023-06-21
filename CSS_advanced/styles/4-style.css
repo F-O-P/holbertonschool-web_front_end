@@ -30,13 +30,14 @@ a {
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
-  --font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-base: HelveticaNeue, Helvetica, Arial, sans-serif;
+  --font-family-title: HelveticaNeue, Helvetica, Arial, sans-serif;
 
 .section-tagline, .card-category {
   color: var(--color-primary);
 }
- body, a {
+
+body, a {
   color: var(--text-color);
  }
 
