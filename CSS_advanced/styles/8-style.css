@@ -7,7 +7,7 @@ body {
   color: #161616;
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
-  line-height: var(--font-height-base);
+  line-height: var(--line-height-base);
 }
 
 a {
