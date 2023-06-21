@@ -83,7 +83,7 @@ a:active {
   --section-body-padding: 0 0 3rem;
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
-  --footer-padding: 5rem 0 1;
+  --footer-padding: 5rem 0 1rem;
 }
 
 .section {
@@ -95,6 +95,25 @@ a:active {
 
 .section-header {
   text-align: var(--section-header-align);
+  padding-top: var(--section-header-padding);
+  padding-left: var(--section-header-padding);
+  padding-bottom: var(--section-header-padding);
+  padding-right: var(--section-header-padding);
+}
+
+.section-body {
+  padding-top: var(--section-body-padding);
+  padding-left: var(--section-body-padding);
+  padding-bottom: var(--section-body-padding);
+  padding-right: var(--section-body-padding);
+}
+
+.section-footer {
+  text-align: var(--section-footer-align);
+  padding-top: var(--section-footer-padding);
+  padding-left: var(--section-footer-padding);
+  padding-bottom: var(--section-footer-padding);
+  padding-right: var(--section-footer-padding);
 }
 
 .section-title {
@@ -121,3 +140,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
+footer {
+  padding-top: var(--footer-padding);
+  padding-left: var(--footer-padding);
+  padding-bottom: var(--footer-padding);
+  padding-right: var(--footer-padding);
+}
