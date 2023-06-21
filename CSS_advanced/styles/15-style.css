@@ -1,7 +1,7 @@
 normalize.css v8.0.1
 
 *, *::before, *::after {
-  box-sizing:
+  box-sizing: border-box;
 }
 
 html {
