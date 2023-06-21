@@ -1,7 +1,7 @@
 normalize.css v8.0.1
 
-* {
-  box-sizing: border-box;
+*, *::before, *::after {
+  box-sizing:
 }
 
 html {
@@ -23,7 +23,7 @@ a:link {
   text-decoration: none;
 }
 
-14a:visited {
+a:visited {
   font-style: italic;
 }
 
