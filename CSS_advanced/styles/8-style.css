@@ -42,9 +42,9 @@ a {
   --font-size-xx-large: 4.8rem;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-weight-small: 1.2;
-  --font-weight-base: 1.5;
-  --font-weight-big: 1.8;
+  --font-height-small: 1.2;
+  --font-height-base: 1.5;
+  --font-height-big: 1.8;
 }
 
 .section-tagline, .card-category {
