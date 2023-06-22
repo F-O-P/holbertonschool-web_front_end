@@ -194,7 +194,7 @@ ul.row {
 .footer-copyright {
   margin: none;
   font-size: var(--font-size-small);
-  color: var(--text-color);
+  background: var(--text-color);
 }
 
 .footer ul {
