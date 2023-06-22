@@ -197,22 +197,6 @@ ul.row {
   background: var(--color-black);
 }
 
-.card-services .card-title {
-  margin: 0;
-}
-
-.card-services a {
-  display: block;
-  padding: 2rem;
-  background-color: var(--color-light-grey)
-}
-
-.card-services a:hover {
-  color: var(--color-white);
-  background: var(--color-primary);
-  text-decoration: none;
-}
-
 .social-link {
   display: block;
 }
