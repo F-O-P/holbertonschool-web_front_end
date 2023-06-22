@@ -197,17 +197,17 @@ ul.row {
   background: var(--color-black);
 }
 
-.card-title .card-services {
+.card-services .card-title {
   margin: 0;
 }
 
-.a .card-services {
+.card-services a {
   display: block;
   padding: 2rem;
   background: var(--color-light-grey)
 }
 
-.a .card-services {
+.card-services a:hover {
   color: var(--color-white);
   background: var(--color-primary)
 }
