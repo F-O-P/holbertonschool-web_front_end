@@ -37,6 +37,21 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border-style: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background-color: var(--button-hover-background);
+}
+
 .visually-hidden {
   display: none;
 }
@@ -204,6 +219,7 @@ ul.row {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background: var(--color-black);
+  --button-color: var(--color-white)
 }
 
 .card-services .card-title {
