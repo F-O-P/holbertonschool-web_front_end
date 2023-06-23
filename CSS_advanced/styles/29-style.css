@@ -120,7 +120,7 @@ a:active {
   --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
-  --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
   --section-tagline-margin: 0;
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
@@ -230,12 +230,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: var(--nav-item-margin);
 }
 
-.nav .nav-item .nav-link::before {
+.nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
 }
 
-.nav .nav-link::before {
+.nav-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav .nav-link:hover {
-  color: var(--color-white);
+  color: var(--nav-item-link-hover);
 }
 
 .row::after {
