@@ -230,12 +230,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: var(--nav-item-margin);
 }
 
-.nav-link::before {
+.nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
 }
 
-.nav-link::before {
+.nav .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 1rem;
 }
 
-.nav .nav-item:hover .nav-link::before {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
 
