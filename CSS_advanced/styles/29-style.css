@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 1rem;
 }
 
-.nav .nav-link:hover {
+.nav .nav-item:hover .nav-link::before {
   color: var(--nav-item-link-hover);
 }
 
