@@ -384,7 +384,7 @@
   /* Section ABOUT US
       ============================= */
   
-  .col .section-about-us {
+  .col- .section-about-us {
     display: flex;
     align-items: center;
   }
