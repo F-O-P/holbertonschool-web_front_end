@@ -381,6 +381,14 @@
     flex-wrap: wrap;
   }
 
+  /* Section ABOUT US
+      ============================= */
+  
+  .col .section-about-us {
+    display: flex;
+    align-items: center;
+  }
+
   /*** 4. CARD ***/
   
   /* Card (all styles)
