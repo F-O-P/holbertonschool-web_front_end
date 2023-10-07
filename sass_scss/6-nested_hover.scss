@@ -6,7 +6,7 @@ $extra-green: #00FF00;
 button {
   color: $so-red;
 
-  :hover {
+  &:hover {
     color: $extra-green;
   }
 }
