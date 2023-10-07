@@ -1,0 +1,12 @@
+/* 6-nested_hover */
+
+$so-red: #FF0000;
+$extra-green: #00FF00
+
+.button {
+  color: $so-red;
+
+  :hover {
+    color: $extra-green;
+  }
+}
