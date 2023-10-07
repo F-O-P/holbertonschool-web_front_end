@@ -1,0 +1,12 @@
+/* 5-nested_child */
+
+$dark-grey: #3D3D3D;
+$so-red: #FF0000;
+
+body {
+  color: $dark-grey;
+
+  .red:first-child {
+    color: $so-red;
+  }
+}
