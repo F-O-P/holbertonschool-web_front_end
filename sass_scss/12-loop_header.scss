@@ -1,7 +1,7 @@
 /* 12-loop_header */
 
 @for $i from 1 through 5 {
-  h:nth-child(#{$i}) {
+  .h:nth-child(#{$i}) {
     font-size: {$i}px;
   }
 }
