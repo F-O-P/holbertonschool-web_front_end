@@ -1,19 +1,19 @@
 /* 8-mixin_margins */
 
-@mixin 10column {
+@mixin 10-px {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-@mixin 15column {
+@mixin 15-px {
   margin-left: 15px;
   margin-right: 15px;
 }
 
 body {
-  @include 10column;
+  @include 10-px;
 }
 
-div {
-  @include 15column;
+.div {
+  @include 15-px;
 }
