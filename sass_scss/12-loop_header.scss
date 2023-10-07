@@ -1,7 +1,7 @@
 /* 12-loop_header */
 
 @for $i from 1 through 5 {
-  H#{$i} {
-    font-size: #{$i}px;
+  H{$i} {
+    font-size: {$i}px;
   }
 }
