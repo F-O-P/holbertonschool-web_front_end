@@ -6,13 +6,12 @@ $extra-green: #00FF00;
 .info {
   font-size: 12px;
 }
-
-.info .success {
+.success {
   @extend .info;
   color: $extra-green;
 }
 
-.info .warning {
+.warning {
   @extend .info;
   color: $extra-green;
 }
