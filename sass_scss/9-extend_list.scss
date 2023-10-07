@@ -1,0 +1,16 @@
+/* 9-extended_lsit */
+
+$so-red: #FF0000;
+$extra-green: #00FF00;
+
+.info {
+  font-size: 12px;
+
+  &.success {
+    color: $extra-green;
+  }
+
+  &.warning {
+    color: $so-red;
+  }
+}
