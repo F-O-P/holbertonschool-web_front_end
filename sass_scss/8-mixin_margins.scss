@@ -1,0 +1,19 @@
+/* 8-mixin_margins */
+
+@mixin 10column {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@mixin 15column {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body {
+  @include 10column;
+}
+
+div {
+  @include 15column;
+}
