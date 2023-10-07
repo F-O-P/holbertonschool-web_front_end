@@ -6,7 +6,7 @@ $so-red: #FF0000;
 body {
   color: $dark-grey;
 
-  .red {
+  &:first-child .red {
     color: $so-red;
   }
 }
