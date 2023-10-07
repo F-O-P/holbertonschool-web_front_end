@@ -5,12 +5,14 @@ $extra-green: #00FF00;
 
 .info {
   font-size: 12px;
+}
 
-  &.success {
-    color: $extra-green;
-  }
+.info .success {
+  @extend .info;
+  color: $extra-green;
+}
 
-  &.warning {
-    color: $so-red;
-  }
+.info .warning {
+  @extend .info;
+  color: $extra-green;
 }
