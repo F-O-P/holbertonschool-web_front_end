@@ -1,0 +1,7 @@
+/* 12-loop_header */
+
+@for $* from 1 through 5 {
+  H#{$*} {
+    font-size: #{$*}px;
+  }
+}
