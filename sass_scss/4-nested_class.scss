@@ -1,0 +1,12 @@
+/* 4-nested_class */
+
+$dark-grey: #3D3D3D;
+$so-red: #FF0000;
+
+body {
+  color: $dark-grey;
+
+  .red {
+    color: $so-red;
+  }
+}
