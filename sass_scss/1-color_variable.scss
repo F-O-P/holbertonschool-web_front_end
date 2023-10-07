@@ -1,0 +1,11 @@
+/* 1-color_variable */
+$first: #3D3D3D;
+
+html {
+  body {
+    color: $first;
+  }
+  p {
+    color: $first;
+  }
+}
