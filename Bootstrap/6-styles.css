@@ -1,0 +1,31 @@
+.btn-primary {
+  background-color: #E0003C;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #BC1340;
+}
+
+.btn-outline-primary {
+  border-color: #E0003C;
+  color: #E0003C;
+}
+
+a, a:hover, a:focus {
+  color: #E0003C;
+}
+
+.card, .card-footer {
+  border: #E0003C 1px solid;
+  border-radius: 1rem;
+}
+
+.card-header {
+  background-color: #E0003C;
+  color: #fff;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.text-muted {
+  color: #8C8C8C;
+}
