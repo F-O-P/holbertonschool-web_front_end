@@ -14,4 +14,5 @@ var fred = welcomeMessage('Fred');
 // guillaume();
 // alex();
 // fred();
-// The return should be Welcome Guillaume, Welcome Alex, and Welcome Fred.
+// The return should be Welcome Guillaume, Welcome Alex,
+// and Welcome Fred as alerts.

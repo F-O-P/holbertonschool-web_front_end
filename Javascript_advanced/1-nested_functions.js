@@ -17,5 +17,4 @@ function outer() {
   }
   inner();
 }
-
 outer();
