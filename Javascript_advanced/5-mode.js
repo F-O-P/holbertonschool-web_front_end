@@ -13,6 +13,7 @@ function main() {
   var darkMode = changeMode(12, "bold", "capitalize", "black", "white");
   var screamMode = changeMode(12, "normal", "lowercase", "white", "black");
 
+  //add a paragraph to the body of the page with the text Welcome Holberton!
   var paragraph = document.createElement("p");
   paragraph.innerHTML = "Welcome Holberton!";
   document.body.appendChild(paragraph);
@@ -20,17 +21,24 @@ function main() {
   var spookyButton = document.createElement("button");
   spookyButton.innerHTML = "Spooky";
   document.body.appendChild(spookyButton);
-  spookyButton.onclick = spooky;
 
   var darkButton = document.createElement("button");
   darkButton.innerHTML = "Dark mode";
   document.body.appendChild(darkButton);
-  darkButton.onclick = darkMode;
-
+  
   var screamButton = document.createElement("button");
   screamButton.innerHTML = "Scream mode";
   document.body.appendChild(screamButton);
-  screamButton.onclick = screamMode;
+  
+  screamButton.onclick = function() {
+    screamMode();
+  }
+  spookyButton.onclick = function() {
+    spooky();
+  }
+  darkButton.onclick = function() {
+    darkMode();
+  }
 }
 
 main();
