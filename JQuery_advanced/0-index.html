@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+      <!-- 
+           the script tag can be placed in either the head or the body
+           but it is recommended to put it at the end of the body
+           because the script will halt the loading of the html causing
+           pages to render slower.
+      -->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous"></script>
+        <!--
+            the second script will check if jQuery has been defined,
+            it will print the message to the browser console to
+            confirm the status of jQuery.
+        -->
+        <script type="application/javascript">
+            window.onload = function() {
+                if (window.jQuery) {
+                    console.log("jQuery has been loaded correctly")
+                } else {
+                    console.log("jQuery has not been loaded correctly")
+                }
+            }
+        </script>
+    </body>
+
+</html>
