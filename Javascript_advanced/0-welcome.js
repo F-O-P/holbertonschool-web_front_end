@@ -7,3 +7,5 @@ function welcome(firstName, lastName) { // firstName = 'John', lastName = 'Cena'
 
   displayFullName();
 }
+
+welcome('John', 'Cena');  //change the name if you wish

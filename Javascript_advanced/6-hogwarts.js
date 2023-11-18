@@ -19,7 +19,7 @@
   },
 
   getScore: function() {
-    console.log(this.name + ": " + this.privateScore);
+    return (this.name + ": " + this.privateScore);
   }
 };
 
@@ -29,7 +29,7 @@ harry.rewardStudent();
 harry.rewardStudent();
 harry.rewardStudent();
 harry.rewardStudent();
-harry.getScore();
+console.log(harry.getScore());
 
 var draco = Object.create(studentHogwarts);
 draco.name = "Draco";
@@ -37,4 +37,4 @@ draco.rewardStudent();
 draco.penalizeStudent();
 draco.penalizeStudent();
 draco.penalizeStudent();
-draco.getScore();
+console.log(draco.getScore());
