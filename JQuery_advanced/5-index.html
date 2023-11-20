@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 5</title>
+
+    </head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous"></script>
+        <script type="application/javascript">
+            function createFamilyTree() {
+
+                var tableElement = $('<table></table>');
+                var theadElement = $('<thead></thead>');
+                theadElement.append('<th>Firstname</th>');
+                theadElement.append('<th>Lastname</th>');
+                tableElement.append(theadElement);
+         
+                var tbodyElement = $('<tbody></tbody>');
+                tableElement.append(tbodyElement);
+        
+                $('body').append(tableElement);
+            }
+         
+            function addNewMember(firstName, lastName) {
+                var row = $('<tr></tr>');
+                row.append(`<td>${firstName}</td>`);
+                row.append(`<td>${lastName}</td>`);
+                row.append(`<td class="remove-row">(x)</td>`);
+         
+                $('table tbody').append(row);
+         
+                $('.remove-row').click(function() {
+                    $(this).parent().remove();
+                });
+            }
+         
+            createFamilyTree();
+            addNewMember('Guillaume', 'Salva');
+            addNewMember('Arielle', 'Snizt');
+            addNewMember('Fanette', 'Snizt');
+            addNewMember('Gerard', 'Snizt');
+            addNewMember('Victor', 'Salva');
+         </script>
+         
+         <style>
+            .remove-row {
+                background-color: orange;
+            }
+         </style>
+    </body>
+
+</html>

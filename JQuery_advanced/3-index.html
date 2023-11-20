@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 3</title>
+
+    </head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous">
+        </script>
+
+        <script type="application/javascript">
+            function createFamilyTree() {
+
+                var storedNames = [
+                    {firstName: "Guillaume", lastName: "Salva"},
+                    {firstName: "Paulette", lastName: "Salva"},
+                    {firstName: "Antoine", lastName: "Salva"}
+                ];
+
+                var tableElement = $('<table></table>');
+                var theadElement = $('<thead></thead>');
+                theadElement.append('<th>Firstname</th>');
+                theadElement.append('<th>Lastname</th>');
+                tableElement.append(theadElement);
+                for(var i = 0; i < 3; i++) {
+                    var row = $('<tr></tr>');
+                    row.append(`<td>${storedNames[i].firstName}</td>`);
+                    row.append(`<td>${storedNames[i].lastName}</td>`);
+                    tableElement.append(row);
+                }
+                $('body').append(tableElement);
+            }
+            createFamilyTree();
+        </script>
+    </body>
+
+</html>
