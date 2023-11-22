@@ -1,63 +1,22 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "How to Cry Wolf",
+      "author": "Al Armist",
+      "id": 1
     },
     {
-      "title": "fd",
-      "author": "fffff",
+      "title": "Surprised!",
+      "author": "Omar Gosh",
       "id": 2
     },
     {
-      "title": "fd",
-      "author": "fffff",
+      "title": "Armed Heists For Dummies",
+      "author": "Robin Banks",
       "id": 3
-    },
-    {
-      "title": "f",
-      "author": "f",
-      "id": 4
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 5
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 6
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 7
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 8
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 9
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 10
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

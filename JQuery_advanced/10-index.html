@@ -4,109 +4,39 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Task 9</title>
+        <title>Task 10</title>
         
     </head>
 
     <body>
-        <header>
-            <style>
-                .loading {
-                    opacity: 0.2;
-                }
-            </style>
-        </header>
+        <header></header>
         <script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
         <script type="application/javascript">
-            var searchInput;
-            function createSearchForm() {
-                searchInput = $('<input type="text" id="searchInput" />');
-                var submitButton = $('<input type="submit" value="Search"></button>');
-
-                submitButton.click(function() {
-                    queryWikipedia(searchInput.val());
-                });
-
-                var emptyUl = $('<ul></ul>');
-                var paginationUl = $('<ul></ul>').attr('id', 'pagination');
-
-                $('body').append(searchInput, submitButton, emptyUl, paginationUl);
+            function addPostRow(data) {
+                console.log(data);
+                $("body").append(`<p><span>Post created with id ${data.id}, title: ${data.title}, author: ${data.author}</span></p>`);
             }
-
-            function addNewArticle(id, title, snippet) {
-                var newLi = $(`<li><p><span>${id} -<b>${title}</span></p><p>${snippet}</p></li>`);
-                $('ul:first').append(newLi);
-            }
-
-            function queryWikipedia(search, offset = 0) {
-                displayLoading(true);
+            function listPosts() {
                 $.ajax({
-                    url: `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${search}&sroffset=${offset}&format=json`,
+                    url: 'http://localhost:3000/posts/',
                     type: 'GET',
-                    dataType: 'jsonp',
-                    success: function(data) {
-                        console.log(data);
-                        buildPagination(data.query.searchinfo.totalhits, 10, offset, search);
-                        $('ul:first').empty();
-                        data.query.search.forEach(function(article) {
-                            addNewArticle(article.pageid, article.title, article.snippet);
+                    success: function(response) {
+                        console.log(response);
+                        response.forEach(function(post) {
+                            addPostRow(post);
                         });
-                        displayLoading(false);
                     },
-                    error: function(err) {
-                        console.log(err);
-                        displayLoading(false);
+                    error: function() {
+                        alert('Server Error');
                     }
                 });
             }
-
-            function buildPagination(numberOfItems, itemsPerPage, currentOffset, search) {
-                $('#pagination').empty();
-                for (let i = 0; i < numberOfItems / itemsPerPage; i++) {
-
-                    const newLi = $('<li></li>');
-                    const newA = $('<a></a>');
-
-                    newA.attr('href', `#${i * itemsPerPage * 10}`);
-                    newA.text(i + 1);
-                    newA.css({
-                        'cursor': 'pointer',
-                        'margin-left': '10px',
-                        'font-weight': i * itemsPerPage === currentOffset ? 'bold' : 'normal'
-                    });
-
-                    newLi.append(newA);
-
-                    $('#pagination').append(newLi);
-
-                    newA.click(function(e) {
-                        e.preventDefault();
-                        queryWikipedia(searchInput.val(), i * itemsPerPage);
-                    });
-                }
-                $('#pagination').css('list-style-type', 'none');
-                $('#pagination a').css('text-decoration', 'none');
-                $('#pagination a').css('color', 'inherit');
-                $('#pagination li').css('display', 'inline');
-            }
-
-            function displayLoading(loading) {
-                var firstUl = $('ul:first');
-                if (loading === true) {
-                    firstUl.wrap('<div class="loading"></div>');
-                } else {
-                    firstUl.unwrap();
-                }
-            }
-
             $(document).ready(function() {
-                createSearchForm();
+                listPosts();
             });
-
-
         </script>
     </body>
 

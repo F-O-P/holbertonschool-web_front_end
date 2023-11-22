@@ -29,7 +29,7 @@
 
             function addNewArticle(id, title, snippet) {
                 const newLi = $(`<li><p><span>${id} -<b>${title}</span></p><p>${snippet}</p></li>`);
-                $('ul:first').append(newLi);
+                $('ul').append(newLi);
             }
 
             function queryWikipedia(search) {

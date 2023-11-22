@@ -17,6 +17,7 @@
             var searchInput;
             function createSearchForm() {
                 searchInput = $('<input type="text" id="searchInput" />');
+                
                 var submitButton = $('<input type="submit" value="Search"></button>');
 
                 submitButton.click(function() {
@@ -54,9 +55,7 @@
             }
 
             function buildPagination(numberOfItems, itemsPerPage, currentOffset, search) {
-                //reset pagination list to an empty tag and organize horizontally
                 $('#pagination').empty();
-                //display pagination with a loop using total numbers of items divded by items per page
                 for (let i = 0; i < numberOfItems / itemsPerPage; i++) {
 
                     const newLi = $('<li></li>');
@@ -88,8 +87,6 @@
             $(document).ready(function() {
                 createSearchForm();
             });
-
-
         </script>
     </body>
 
